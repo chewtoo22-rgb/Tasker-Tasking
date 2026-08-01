@@ -33,3 +33,9 @@ Each exported item is one XML file. Suggested naming: lowercase, hyphenated, mat
 - Tasker XML embeds absolute references to other Tasks/Scenes by name, so keep names stable once other Projects depend on them.
 - Prefer exporting the whole **Project** over individual Profiles/Tasks when they're tightly coupled — it keeps cross-references intact in one file.
 - Treat this repo as the source of truth: if you tweak something on-device, export it back here before it's forgotten.
+
+## Docs
+
+- [`docs/setedit-secure-settings.md`](docs/setedit-secure-settings.md) — granting Tasker
+  and SetEdit the `WRITE_SECURE_SETTINGS` permission via ADB so Tasker can read/write
+  system Settings.Secure/Settings.Global values without root.
