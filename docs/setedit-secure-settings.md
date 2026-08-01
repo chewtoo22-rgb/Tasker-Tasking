@@ -117,6 +117,11 @@ In the Tasker app:
    - Verify the grant actually stuck, e.g. via aShell or iAdb: 
      `dumpsys package by4a.setedit22 | grep WRITE_SECURE_SETTINGS` should show `granted=true`.
 
+If the Task hangs or does nothing instead of working, see
+[`shizuku-freeze-troubleshooting.md`](shizuku-freeze-troubleshooting.md) — it's almost
+always Shizuku's service having died, or a first-run permission popup nobody answered,
+and Tasker's default "wait forever" timeout turning that into a freeze.
+
 ### 3. Save it into this repo
 
 Once the Task works on-device: long-press it in Tasker → **Export** → save the

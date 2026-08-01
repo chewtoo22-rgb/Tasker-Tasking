@@ -39,3 +39,5 @@ Each exported item is one XML file. Suggested naming: lowercase, hyphenated, mat
 - [`docs/setedit-secure-settings.md`](docs/setedit-secure-settings.md) — granting Tasker
   and SetEdit the `WRITE_SECURE_SETTINGS` permission via ADB so Tasker can read/write
   system Settings.Secure/Settings.Global values without root.
+- [`docs/shizuku-freeze-troubleshooting.md`](docs/shizuku-freeze-troubleshooting.md) —
+  what to do when the Shizuku-based Task hangs or does nothing instead of working.
